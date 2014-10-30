@@ -77,6 +77,8 @@ No questions yet.
 4. screenshot-4.png
 
 == Changelog ==
+= 1.0.1 =
+* Fixed bug that hid "add new event"
 
 = 1.0 = 
 * Initial release

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Chamber Dashboard Event Calendar
 Description: Create a calendar of events and display it on your site.  A fork of the Events Maker plugin, modified to work with the Chamber Dashboard suite of plugins.
-Version: 1
+Version: 1.0.1
 Author: Morgan Kay
 Author URI: http://wpalchemists.com/
 Plugin URI: http://chamberdashboard.com/
@@ -635,14 +635,6 @@ class Cdash_Events
 
 		$taxonomies = array('event-category', 'event-location', 'event-tag');
 
-		// Menu icon
-		global $wp_version;
-
-		if(version_compare($wp_version, '3.8', '>='))
-			$menu_icon = 'dashicons-calendar';
-		else
-			$menu_icon = CDASH_EVENTS_URL.'/images/icon-events-16.png';
-
 		$args_event = array(
 			'labels' => $labels_event,
 			'description' => '',
@@ -654,21 +646,7 @@ class Cdash_Events
 			'show_in_admin_bar' => true,
 			'show_in_nav_menus' => true,
 			'menu_position' => 5,
-			'menu_icon' => $menu_icon,
-			'capability_type' => 'event',
-			'capabilities' => array(
-				'publish_posts' => 'publish_events',
-				'edit_posts' => 'edit_events',
-				'edit_others_posts' => 'edit_others_events',
-				'edit_published_posts' => 'edit_published_events',
-				'delete_published_posts' => 'delete_published_events',
-				'delete_posts' => 'delete_events',
-				'delete_others_posts' => 'delete_others_events',
-				'read_private_posts' => 'read_private_events',
-				'edit_post' => 'edit_event',
-				'delete_post' => 'delete_event',
-				'read_post' => 'read_event',
-			),
+			'menu_icon' => 'dashicons-calendar',
 			'map_meta_cap' => false,
 			'hierarchical' => false,
 			'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'comments', 'revisions'),
