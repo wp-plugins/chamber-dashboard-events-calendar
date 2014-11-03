@@ -14,7 +14,7 @@ Create a calendar of events and display it on your site.  A fork of the Events M
 
 Create a calendar of events to display on your site.  Chamber Dashboard Events Calendar is a part of the Chamber Dashboard collection of plugins and themes designed to meet the needs of chambers of commerce.
 
-For more information, check out plugin page at [Chamber Dashboard](http://www.dfactory.eu/) site.
+For more information, check out plugin page at [Chamber Dashboard](http://chamberdashboard.com/features/chamber-dashboard-events-calendar/).
 
 = Chamber Dashboard Events Calendar features: =
 
@@ -77,6 +77,9 @@ No questions yet.
 4. screenshot-4.png
 
 == Changelog ==
+- 1.0.2 =
+* Fixed capabilities bug
+
 = 1.0.1 =
 * Fixed bug that hid "add new event"
 

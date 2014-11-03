@@ -2,7 +2,7 @@
 /*
 Plugin Name: Chamber Dashboard Event Calendar
 Description: Create a calendar of events and display it on your site.  A fork of the Events Maker plugin, modified to work with the Chamber Dashboard suite of plugins.
-Version: 1.0.1
+Version: 1.0.2
 Author: Morgan Kay
 Author URI: http://wpalchemists.com/
 Plugin URI: http://chamberdashboard.com/
@@ -120,7 +120,6 @@ class Cdash_Events
 		add_action('wp', array(&$this, 'load_pluggable_hooks'));
 
 		// filters
-		add_filter('map_meta_cap', array(&$this, 'event_map_meta_cap'), 10, 4);
 		add_filter('post_updated_messages', array(&$this, 'register_post_types_messages'));
 		add_filter('plugin_row_meta', array(&$this, 'plugin_extend_links'), 10, 2);
 	}
@@ -647,7 +646,7 @@ class Cdash_Events
 			'show_in_nav_menus' => true,
 			'menu_position' => 5,
 			'menu_icon' => 'dashicons-calendar',
-			'map_meta_cap' => false,
+			'map_meta_cap' => true,
 			'hierarchical' => false,
 			'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'comments', 'revisions'),
 			'rewrite' => array(
@@ -889,54 +888,12 @@ class Cdash_Events
 		{
 			return array_merge(
 				$links,
-				array(sprintf('<a href="http://www.dfactory.eu/support/forum/cdash-events/" target="_blank">%s</a>', __('Support', 'cdash-events')))
+				array(sprintf('<a href="http://chamberdashboard.com/professional-services-support/" target="_blank">%s</a>', __('Support', 'cdash-events')))
 			);
 		}
 
 		return $links;
 	}
 
-
-	/**
-	 * Map capabilities
-	*/
-	public function event_map_meta_cap($caps, $cap, $user_id, $args)
-	{
-		if('edit_event' === $cap || 'delete_event' === $cap || 'read_event' === $cap)
-		{
-			$post = get_post($args[0]);
-			$post_type = get_post_type_object($post->post_type);
-			$caps = array();
-
-			if(!in_array($post->post_type, apply_filters('cde_event_post_type', array('event'))))
-				return $caps;
-		}
-
-		if('edit_event' === $cap)
-		{
-			if ($user_id == $post->post_author)
-				$caps[] = $post_type->cap->edit_posts;
-			else
-				$caps[] = $post_type->cap->edit_others_posts;
-		}
-		elseif('delete_event' === $cap)
-		{
-			if (isset($post->post_author) && $user_id == $post->post_author)
-				$caps[] = $post_type->cap->delete_posts;
-			else
-				$caps[] = $post_type->cap->delete_others_posts;
-		}
-		elseif('read_event' === $cap)
-		{
-			if ('private' != $post->post_status)
-				$caps[] = 'read';
-			elseif ($user_id == $post->post_author)
-				$caps[] = 'read';
-			else
-				$caps[] = $post_type->cap->read_private_posts;
-		}
-
-		return $caps;
-	}
 }
 ?>
