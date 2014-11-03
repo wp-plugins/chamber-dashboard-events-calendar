@@ -1,0 +1,1358 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cde\n"
+"POT-Creation-Date: 2014-10-13 14:59-0800\n"
+"PO-Revision-Date: 2014-10-13 15:00-0800\n"
+"Last-Translator: Morgan <morgan@wpalchemists.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: ../cdash-event-calendar.php:229
+msgid "Australian Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:230
+msgid "Bangladeshi Taka"
+msgstr ""
+
+#: ../cdash-event-calendar.php:231
+msgid "Brazilian Real"
+msgstr ""
+
+#: ../cdash-event-calendar.php:232
+msgid "Bulgarian Lev"
+msgstr ""
+
+#: ../cdash-event-calendar.php:233
+msgid "Canadian Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:234
+msgid "Chilean Peso"
+msgstr ""
+
+#: ../cdash-event-calendar.php:235
+msgid "Chinese Yuan"
+msgstr ""
+
+#: ../cdash-event-calendar.php:236
+msgid "Colombian Peso"
+msgstr ""
+
+#: ../cdash-event-calendar.php:237
+msgid "Croatian kuna"
+msgstr ""
+
+#: ../cdash-event-calendar.php:238
+msgid "Czech Koruna"
+msgstr ""
+
+#: ../cdash-event-calendar.php:239
+msgid "Danish Krone"
+msgstr ""
+
+#: ../cdash-event-calendar.php:240
+msgid "Euro"
+msgstr ""
+
+#: ../cdash-event-calendar.php:241
+msgid "Hong Kong Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:242
+msgid "Hungarian Forint"
+msgstr ""
+
+#: ../cdash-event-calendar.php:243
+msgid "Icelandic krona"
+msgstr ""
+
+#: ../cdash-event-calendar.php:244
+msgid "Indian Rupee"
+msgstr ""
+
+#: ../cdash-event-calendar.php:245
+msgid "Indonesian Rupiah"
+msgstr ""
+
+#: ../cdash-event-calendar.php:246
+msgid "Israeli Shekel"
+msgstr ""
+
+#: ../cdash-event-calendar.php:247
+msgid "Iranian Rial"
+msgstr ""
+
+#: ../cdash-event-calendar.php:248
+msgid "Japanese Yen"
+msgstr ""
+
+#: ../cdash-event-calendar.php:249
+msgid "Malaysian Ringgit"
+msgstr ""
+
+#: ../cdash-event-calendar.php:250
+msgid "Mexican Peso"
+msgstr ""
+
+#: ../cdash-event-calendar.php:251
+msgid "New Zealand Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:252
+msgid "Nigerian Naira"
+msgstr ""
+
+#: ../cdash-event-calendar.php:253
+msgid "Norwegian Krone"
+msgstr ""
+
+#: ../cdash-event-calendar.php:254
+msgid "Philippine Peso"
+msgstr ""
+
+#: ../cdash-event-calendar.php:255
+msgid "Polish Zloty"
+msgstr ""
+
+#: ../cdash-event-calendar.php:256
+msgid "Pound Sterling"
+msgstr ""
+
+#: ../cdash-event-calendar.php:257
+msgid "Romanian Leu"
+msgstr ""
+
+#: ../cdash-event-calendar.php:258
+msgid "Russian Ruble"
+msgstr ""
+
+#: ../cdash-event-calendar.php:259
+msgid "Singapore Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:260
+msgid "South African Rand"
+msgstr ""
+
+#: ../cdash-event-calendar.php:261
+msgid "South Korean Won"
+msgstr ""
+
+#: ../cdash-event-calendar.php:262
+msgid "Swedish Krona"
+msgstr ""
+
+#: ../cdash-event-calendar.php:263
+msgid "Swiss Franc"
+msgstr ""
+
+#: ../cdash-event-calendar.php:264
+msgid "Taiwan New Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:265
+msgid "Thai Baht"
+msgstr ""
+
+#: ../cdash-event-calendar.php:266
+msgid "Turkish Lira"
+msgstr ""
+
+#: ../cdash-event-calendar.php:267
+msgid "Ukrainian Hryvnia"
+msgstr ""
+
+#: ../cdash-event-calendar.php:268
+msgid "United Arab Emirates Dirham"
+msgstr ""
+
+#: ../cdash-event-calendar.php:269
+msgid "United States Dollar"
+msgstr ""
+
+#: ../cdash-event-calendar.php:270
+msgid "Vietnamese Dong"
+msgstr ""
+
+#: ../cdash-event-calendar.php:317
+msgid "before the price"
+msgstr ""
+
+#: ../cdash-event-calendar.php:318
+msgid "after the price"
+msgstr ""
+
+#: ../cdash-event-calendar.php:333
+msgid "once"
+msgstr ""
+
+#: ../cdash-event-calendar.php:334
+msgid "daily"
+msgstr ""
+
+#: ../cdash-event-calendar.php:335
+msgid "weekly"
+msgstr ""
+
+#: ../cdash-event-calendar.php:336
+msgid "monthly"
+msgstr ""
+
+#: ../cdash-event-calendar.php:337
+msgid "yearly"
+msgstr ""
+
+#: ../cdash-event-calendar.php:338
+msgid "custom"
+msgstr ""
+
+#: ../cdash-event-calendar.php:513 ../includes/class-widgets.php:285
+#: ../includes/class-widgets.php:735
+msgid "Event Categories"
+msgstr ""
+
+#: ../cdash-event-calendar.php:514
+msgid "Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:515
+msgid "Search Event Categories"
+msgstr ""
+
+#: ../cdash-event-calendar.php:516
+msgid "All Event Categories"
+msgstr ""
+
+#: ../cdash-event-calendar.php:517
+msgid "Parent Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:518
+msgid "Parent Event Category:"
+msgstr ""
+
+#: ../cdash-event-calendar.php:519
+msgid "Edit Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:520
+msgid "View Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:521
+msgid "Update Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:522
+msgid "Add New Event Category"
+msgstr ""
+
+#: ../cdash-event-calendar.php:523
+msgid "New Event Category Name"
+msgstr ""
+
+#: ../cdash-event-calendar.php:524
+msgid "Categories"
+msgstr ""
+
+#: ../cdash-event-calendar.php:528 ../cdash-event-calendar.php:539
+msgid "Locations"
+msgstr ""
+
+#: ../cdash-event-calendar.php:529
+msgid "Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:530
+msgid "Search Event Locations"
+msgstr ""
+
+#: ../cdash-event-calendar.php:531
+msgid "All Event Locations"
+msgstr ""
+
+#: ../cdash-event-calendar.php:532
+msgid "Parent Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:533
+msgid "Parent Event Location:"
+msgstr ""
+
+#: ../cdash-event-calendar.php:534
+msgid "Edit Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:535
+msgid "View Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:536
+msgid "Update Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:537
+msgid "Add New Event Location"
+msgstr ""
+
+#: ../cdash-event-calendar.php:538
+msgid "New Event Location Name"
+msgstr ""
+
+#: ../cdash-event-calendar.php:575
+msgid "Event Tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:576
+msgid "Event Tag"
+msgstr ""
+
+#: ../cdash-event-calendar.php:577
+msgid "Search Event Tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:578
+msgid "Popular Event Tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:579
+msgid "All Event Tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:582
+msgid "Edit Event Tag"
+msgstr ""
+
+#: ../cdash-event-calendar.php:583
+msgid "Update Event Tag"
+msgstr ""
+
+#: ../cdash-event-calendar.php:584
+msgid "Add New Event Tag"
+msgstr ""
+
+#: ../cdash-event-calendar.php:585
+msgid "New Event Tag Name"
+msgstr ""
+
+#: ../cdash-event-calendar.php:586
+msgid "Separate event tags with commas"
+msgstr ""
+
+#: ../cdash-event-calendar.php:587
+msgid "Add or remove event tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:588
+msgid "Choose from the most used event tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:589
+msgid "Tags"
+msgstr ""
+
+#: ../cdash-event-calendar.php:620 ../cdash-event-calendar.php:622
+#: ../includes/class-widgets.php:659 ../includes/template-functions.php:507
+msgid "Events"
+msgstr ""
+
+#: ../cdash-event-calendar.php:621
+msgid "Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:623
+msgid "All Events"
+msgstr ""
+
+#: ../cdash-event-calendar.php:624
+msgid "Add New"
+msgstr ""
+
+#: ../cdash-event-calendar.php:625
+msgid "Add New Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:626
+msgid "Edit Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:627
+msgid "New Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:628
+msgid "View Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:629
+msgid "Event Archive"
+msgstr ""
+
+#: ../cdash-event-calendar.php:630
+msgid "Search Event"
+msgstr ""
+
+#: ../cdash-event-calendar.php:631
+msgid "No events found"
+msgstr ""
+
+#: ../cdash-event-calendar.php:632
+msgid "No events found in trash"
+msgstr ""
+
+#: ../cdash-event-calendar.php:700
+#, php-format
+msgid "Event updated. <a href=\"%s\">View event</a>"
+msgstr ""
+
+#: ../cdash-event-calendar.php:701
+msgid "Custom field updated."
+msgstr ""
+
+#: ../cdash-event-calendar.php:702
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../cdash-event-calendar.php:703
+msgid "Event updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: ../cdash-event-calendar.php:705
+#, php-format
+msgid "Event restored to revision from %s"
+msgstr ""
+
+#: ../cdash-event-calendar.php:706
+#, php-format
+msgid "Event published. <a href=\"%s\">View event</a>"
+msgstr ""
+
+#: ../cdash-event-calendar.php:707
+msgid "Event saved."
+msgstr ""
+
+#: ../cdash-event-calendar.php:708
+#, php-format
+msgid "Event submitted. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr ""
+
+#: ../cdash-event-calendar.php:709
+#, php-format
+msgid ""
+"Event scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview event</a>"
+msgstr ""
+
+#. translators: Publish box date format, see http://php.net/date
+#: ../cdash-event-calendar.php:711
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../cdash-event-calendar.php:712
+#, php-format
+msgid "Event draft updated. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr ""
+
+#: ../cdash-event-calendar.php:770 ../includes/class-taxonomies.php:150
+#: ../includes/class-taxonomies.php:279
+msgid "Select image"
+msgstr ""
+
+#: ../cdash-event-calendar.php:771
+msgid "Add image"
+msgstr ""
+
+#: ../cdash-event-calendar.php:808
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr ""
+
+#: ../cdash-event-calendar.php:914 ../includes/class-welcome.php:48
+msgid "Support"
+msgstr ""
+
+#: ../includes/class-listing.php:58
+msgid "Start Date"
+msgstr ""
+
+#: ../includes/class-listing.php:59
+msgid "End Date"
+msgstr ""
+
+#: ../includes/class-listing.php:116
+msgid "Start"
+msgstr ""
+
+#: ../includes/class-listing.php:117
+msgid "End"
+msgstr ""
+
+#: ../includes/class-listing.php:118 ../includes/class-metaboxes.php:296
+msgid "Recurrence"
+msgstr ""
+
+#: ../includes/class-listing.php:119 ../templates/single-event/tickets.php:41
+#: ../templates/single-event/tickets.php:55
+msgid "Tickets"
+msgstr ""
+
+#: ../includes/class-listing.php:150
+msgid "Paid"
+msgstr ""
+
+#: ../includes/class-listing.php:163 ../includes/class-templates.php:210
+#: ../templates/single-event/tickets.php:57
+msgid "Free"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:48
+msgid "Ticket Name"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:49
+msgid "Price"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:61
+msgid "Event Display Options"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:68
+msgid "Event Date and Time"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:75
+msgid "Event Tickets"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:136 ../includes/class-metaboxes.php:140
+#: ../includes/class-metaboxes.php:376 ../includes/class-metaboxes.php:420
+#: ../includes/class-metaboxes.php:436 ../includes/class-metaboxes.php:492
+#: ../includes/class-metaboxes.php:508
+msgid "Delete"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:138 ../includes/class-metaboxes.php:287
+#: ../includes/class-metaboxes.php:375 ../includes/class-metaboxes.php:419
+#: ../includes/class-metaboxes.php:435
+msgid "Start date/time"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:139 ../includes/class-metaboxes.php:290
+#: ../includes/class-metaboxes.php:379 ../includes/class-metaboxes.php:423
+#: ../includes/class-metaboxes.php:439
+msgid "End date/time"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:141
+msgid "Are you sure you want to delete this ticket?"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:142
+msgid "Are you sure you want to delete this occurrence?"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:150
+msgid "day"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:151
+msgid "days"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:152
+msgid "week"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:153
+msgid "weeks"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:154
+msgid "month"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:155
+msgid "months"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:156
+msgid "year"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:157
+msgid "years"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:293
+msgid "All-day event?"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:333
+msgid "day of the month"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:333
+msgid "day of the week"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:341
+msgid "Repeat every"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:341
+msgid "until"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:373 ../includes/class-metaboxes.php:417
+#: ../includes/class-metaboxes.php:433
+msgid "Separate end date"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:384
+msgid "Add new occurrence"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:470
+msgid "Is this a free event?"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:475
+msgid "Add new ticket"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:517
+#: ../templates/single-event/tickets.php:70
+msgid "Buy tickets URL"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:539 ../includes/class-metaboxes.php:830
+#: ../includes/class-settings.php:214
+msgid "Display Google Map"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:540 ../includes/class-metaboxes.php:831
+#: ../includes/class-settings.php:215
+msgid "Display Location Details"
+msgstr ""
+
+#: ../includes/class-metaboxes.php:541 ../includes/class-metaboxes.php:832
+#: ../includes/class-settings.php:216
+msgid "Display Tickets Info"
+msgstr ""
+
+#: ../includes/class-settings.php:55 ../includes/class-widgets.php:683
+msgid "Publish date"
+msgstr ""
+
+#: ../includes/class-settings.php:56
+msgid "Events start date"
+msgstr ""
+
+#: ../includes/class-settings.php:57
+msgid "Events end date"
+msgstr ""
+
+#: ../includes/class-settings.php:61
+msgid "selected page"
+msgstr ""
+
+#: ../includes/class-settings.php:62
+msgid "manually"
+msgstr ""
+
+#: ../includes/class-settings.php:66
+msgid "before the content"
+msgstr ""
+
+#: ../includes/class-settings.php:67
+msgid "after the content"
+msgstr ""
+
+#: ../includes/class-settings.php:79
+msgid "General settings saved."
+msgstr ""
+
+#: ../includes/class-settings.php:80
+msgid "General settings restored to defaults."
+msgstr ""
+
+#: ../includes/class-settings.php:81
+msgid "There is no such menu."
+msgstr ""
+
+#: ../includes/class-settings.php:82
+msgid "Menu name can not be empty."
+msgstr ""
+
+#: ../includes/class-settings.php:87
+msgid "General"
+msgstr ""
+
+#: ../includes/class-settings.php:111 ../includes/class-welcome.php:46
+msgid "Settings"
+msgstr ""
+
+#: ../includes/class-settings.php:126
+msgid "Calendar Options"
+msgstr ""
+
+#: ../includes/class-settings.php:130 ../includes/class-settings.php:131
+msgid "Chamber Dashboard"
+msgstr ""
+
+#: ../includes/class-settings.php:151
+msgid "Chamber Dashboard Events Calendar"
+msgstr ""
+
+#: ../includes/class-settings.php:169
+msgid "Reset to defaults"
+msgstr ""
+
+#: ../includes/class-settings.php:187
+msgid "General settings"
+msgstr ""
+
+#: ../includes/class-settings.php:188
+msgid "Event default options"
+msgstr ""
+
+#: ../includes/class-settings.php:189
+msgid "Featured image display options"
+msgstr ""
+
+#: ../includes/class-settings.php:190
+msgid "RSS feed"
+msgstr ""
+
+#: ../includes/class-settings.php:193
+msgid "Currency settings"
+msgstr ""
+
+#: ../includes/class-settings.php:194
+msgid "Currency"
+msgstr ""
+
+#: ../includes/class-settings.php:195
+msgid "Currency position"
+msgstr ""
+
+#: ../includes/class-settings.php:196
+msgid "Currency symbol"
+msgstr ""
+
+#: ../includes/class-settings.php:197
+msgid "Currency display format"
+msgstr ""
+
+#: ../includes/class-settings.php:200
+msgid "Date settings"
+msgstr ""
+
+#: ../includes/class-settings.php:201
+msgid "Date and time format"
+msgstr ""
+
+#: ../includes/class-settings.php:202
+msgid "First day of the week"
+msgstr ""
+
+#: ../includes/class-settings.php:234
+msgid ""
+"Select default display options for single event (this can overriden for each "
+"event separately)."
+msgstr ""
+
+#: ../includes/class-settings.php:245
+msgid "Display Featured Image on Single Event View"
+msgstr ""
+
+#: ../includes/class-settings.php:246
+msgid "Display Featured Image on Category and Tag Archive Views"
+msgstr ""
+
+#: ../includes/class-settings.php:264
+msgid ""
+"Some themes will automatically display featured images - check these options "
+"if you want to display featured images, but your theme does not already "
+"display them."
+msgstr ""
+
+#: ../includes/class-settings.php:278
+msgid "Enable RSS feed"
+msgstr ""
+
+#: ../includes/class-settings.php:280
+msgid "Enable to include events in your website main RSS feed."
+msgstr ""
+
+#: ../includes/class-settings.php:304
+msgid "Choose the currency that will be used for ticket prices."
+msgstr ""
+
+#: ../includes/class-settings.php:327
+msgid "Choose the location of the currency sign."
+msgstr ""
+
+#: ../includes/class-settings.php:343
+msgid ""
+"This will appear next to all the currency figures on the website. Ex. $, "
+"USD, &euro;..."
+msgstr ""
+
+#: ../includes/class-settings.php:368
+msgid ""
+"This determines how your currency is displayed. Ex. 1,234.56 or 1,200 or "
+"1200."
+msgstr ""
+
+#: ../includes/class-settings.php:382
+msgid "Date"
+msgstr ""
+
+#: ../includes/class-settings.php:384
+msgid "Time"
+msgstr ""
+
+#: ../includes/class-settings.php:386
+msgid "Enter your preffered date and time formatting."
+msgstr ""
+
+#: ../includes/class-settings.php:407
+msgid "Select preffered first day of the week for the calendar display."
+msgstr ""
+
+#: ../includes/class-taxonomies.php:42
+msgid "Color"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:52
+msgid "Map"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:58
+#: ../templates/loop-event/location-details.php:27
+msgid "Address"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:64
+#: ../templates/loop-event/location-details.php:35
+msgid "City"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:70
+#: ../templates/loop-event/location-details.php:39
+msgid "State / Province"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:76
+#: ../templates/loop-event/location-details.php:31
+msgid "Zip Code"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:82
+#: ../templates/loop-event/location-details.php:43
+msgid "Country"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:88
+#: ../templates/loop-event/location-details.php:50
+#: ../templates/loop-event/organizer-details.php:46
+msgid "Image"
+msgstr ""
+
+#: ../includes/class-taxonomies.php:151 ../includes/class-taxonomies.php:280
+msgid "Remove image"
+msgstr ""
+
+#: ../includes/class-templates.php:128 ../includes/class-templates.php:156
+#: ../includes/class-templates.php:310 ../includes/class-templates.php:338
+#: ../includes/template-functions.php:182
+#: ../includes/template-functions.php:194
+msgid "<strong>Location: </strong>"
+msgstr ""
+
+#: ../includes/class-templates.php:200 ../includes/class-templates.php:209
+msgid "Tickets: "
+msgstr ""
+
+#: ../includes/class-templates.php:218
+msgid "Buy tickets: "
+msgstr ""
+
+#: ../includes/class-templates.php:225 ../includes/template-functions.php:124
+msgid "<strong>Category: </strong>"
+msgstr ""
+
+#: ../includes/class-templates.php:232 ../includes/template-functions.php:150
+msgid "<strong>Tags: </strong>"
+msgstr ""
+
+#: ../includes/class-update.php:72
+msgid "Datebase was succesfully updated. Enjoy new features!"
+msgstr ""
+
+#: ../includes/class-update.php:79
+msgid ""
+"Events Maker new features require a database update. Make sure you backup "
+"your database and then click."
+msgstr ""
+
+#: ../includes/class-update.php:79
+msgid "Update"
+msgstr ""
+
+#: ../includes/class-welcome.php:19 ../includes/class-welcome.php:37
+msgid "Welcome to Events Maker"
+msgstr ""
+
+#: ../includes/class-welcome.php:41
+msgid ""
+"Events Maker is an easy to use but flexible events management plugin made "
+"the WordPress way."
+msgstr ""
+
+#: ../includes/class-welcome.php:47
+msgid "Documentation"
+msgstr ""
+
+#: ../includes/class-welcome.php:49
+msgid "dFactory Plugins"
+msgstr ""
+
+#: ../includes/class-welcome.php:54
+msgid "About Events Maker"
+msgstr ""
+
+#: ../includes/class-welcome.php:70
+msgid "Main Features"
+msgstr ""
+
+#: ../includes/class-welcome.php:76
+msgid "Easy Event Management"
+msgstr ""
+
+#: ../includes/class-welcome.php:77
+msgid ""
+"Set up date and time, title, desciption and other details of your events in "
+"a WordPress native interface."
+msgstr ""
+
+#: ../includes/class-welcome.php:82
+msgid "Locations and Organizers"
+msgstr ""
+
+#: ../includes/class-welcome.php:83
+msgid ""
+"Organize your events in reusable Categories, Tags, Locations and Organizers."
+msgstr ""
+
+#: ../includes/class-welcome.php:88
+msgid "Multiple Event Tickets"
+msgstr ""
+
+#: ../includes/class-welcome.php:89
+msgid ""
+"Create free or paid events and add as many different types of tickets as you "
+"need."
+msgstr ""
+
+#: ../includes/class-welcome.php:98
+msgid "6 Widgets incl. Ajax Calendar"
+msgstr ""
+
+#: ../includes/class-welcome.php:99
+msgid ""
+"Complete set of widgets allow you to display event details anywhere in a "
+"theme."
+msgstr ""
+
+#: ../includes/class-welcome.php:104
+msgid "Highly Customizable Settings"
+msgstr ""
+
+#: ../includes/class-welcome.php:105
+msgid ""
+"Easily control different areas of the plugin including Permalinks, "
+"Capabilities and many other."
+msgstr ""
+
+#: ../includes/class-welcome.php:110
+msgid "WPML Compatibility"
+msgstr ""
+
+#: ../includes/class-welcome.php:111
+msgid ""
+"Are you running a multilingual events site? Events Maker is fully compatible "
+"with WPML (and probably other multilingual plugins too)."
+msgstr ""
+
+#: ../includes/class-welcome.php:120
+msgid "Under the Hood"
+msgstr ""
+
+#: ../includes/class-welcome.php:124
+msgid "Custom Post Types & Custom Taxonomies"
+msgstr ""
+
+#: ../includes/class-welcome.php:125
+msgid ""
+"Events Maker is built using WordPress custom post types, custom taxonomies "
+"and custom post fields. "
+msgstr ""
+
+#: ../includes/class-welcome.php:128
+msgid "Filters and Actions"
+msgstr ""
+
+#: ../includes/class-welcome.php:129
+msgid ""
+"We have included various hooks and filters so you can plug-into these hooks "
+"to extend the functionalities."
+msgstr ""
+
+#: ../includes/class-welcome.php:133
+msgid "Custom Functions"
+msgstr ""
+
+#: ../includes/class-welcome.php:134
+msgid ""
+"There are 26 custom functions available. You can use it to make Events Maker "
+"suite your individual needs."
+msgstr ""
+
+#: ../includes/class-welcome.php:142
+msgid "Go to Events Maker Settings"
+msgstr ""
+
+#: ../includes/class-widgets.php:46 ../includes/class-widgets.php:53
+msgid "Events Archives"
+msgstr ""
+
+#: ../includes/class-widgets.php:48
+msgid "Displays events archives"
+msgstr ""
+
+#: ../includes/class-widgets.php:62
+msgid "Monthly"
+msgstr ""
+
+#: ../includes/class-widgets.php:63
+msgid "Yearly"
+msgstr ""
+
+#: ../includes/class-widgets.php:67 ../includes/class-widgets.php:688
+#: ../includes/class-widgets.php:976 ../includes/class-widgets.php:1093
+msgid "Ascending"
+msgstr ""
+
+#: ../includes/class-widgets.php:68 ../includes/class-widgets.php:689
+#: ../includes/class-widgets.php:977 ../includes/class-widgets.php:1094
+msgid "Descending"
+msgstr ""
+
+#: ../includes/class-widgets.php:89 ../includes/class-widgets.php:264
+#: ../includes/class-widgets.php:684 ../includes/class-widgets.php:727
+#: ../includes/class-widgets.php:1004 ../includes/class-widgets.php:1121
+msgid "Title"
+msgstr ""
+
+#: ../includes/class-widgets.php:93 ../includes/class-widgets.php:1008
+#: ../includes/class-widgets.php:1125
+msgid "Display as dropdown"
+msgstr ""
+
+#: ../includes/class-widgets.php:94
+msgid "Show amount of events"
+msgstr ""
+
+#: ../includes/class-widgets.php:97
+msgid "Display Type"
+msgstr ""
+
+#: ../includes/class-widgets.php:110 ../includes/class-widgets.php:779
+#: ../includes/class-widgets.php:1024 ../includes/class-widgets.php:1141
+msgid "Order"
+msgstr ""
+
+#: ../includes/class-widgets.php:122
+msgid "Limit"
+msgstr ""
+
+#: ../includes/class-widgets.php:165 ../includes/class-widgets.php:179
+msgid "Events Calendar"
+msgstr ""
+
+#: ../includes/class-widgets.php:167
+msgid "Displays events calendar"
+msgstr ""
+
+#: ../includes/class-widgets.php:188 ../includes/class-widgets.php:676
+msgid "all"
+msgstr ""
+
+#: ../includes/class-widgets.php:189 ../includes/class-widgets.php:677
+msgid "selected"
+msgstr ""
+
+#: ../includes/class-widgets.php:193
+msgid "basic"
+msgstr ""
+
+#: ../includes/class-widgets.php:194
+msgid "dark"
+msgstr ""
+
+#: ../includes/class-widgets.php:195
+msgid "light"
+msgstr ""
+
+#: ../includes/class-widgets.php:196
+msgid "flat"
+msgstr ""
+
+#: ../includes/class-widgets.php:268
+msgid "Show past events"
+msgstr ""
+
+#: ../includes/class-widgets.php:269
+msgid "Highlight weekends"
+msgstr ""
+
+#: ../includes/class-widgets.php:272
+msgid "CSS Style"
+msgstr ""
+
+#: ../includes/class-widgets.php:300 ../includes/class-widgets.php:750
+msgid "Event Locations"
+msgstr ""
+
+#: ../includes/class-widgets.php:627 ../includes/class-widgets.php:938
+msgid "No results were found."
+msgstr ""
+
+#: ../includes/class-widgets.php:648
+msgid "Events List"
+msgstr ""
+
+#: ../includes/class-widgets.php:650
+msgid "Displays a list of events"
+msgstr ""
+
+#: ../includes/class-widgets.php:670 ../includes/template-functions.php:34
+msgid "No Events"
+msgstr ""
+
+#: ../includes/class-widgets.php:681
+msgid "Start date"
+msgstr ""
+
+#: ../includes/class-widgets.php:682
+msgid "End date"
+msgstr ""
+
+#: ../includes/class-widgets.php:731
+msgid "Number of events"
+msgstr ""
+
+#: ../includes/class-widgets.php:767 ../includes/class-widgets.php:1012
+#: ../includes/class-widgets.php:1129
+msgid "Order by"
+msgstr ""
+
+#: ../includes/class-widgets.php:794
+msgid "Display past events"
+msgstr ""
+
+#: ../includes/class-widgets.php:796
+msgid "Display event occurrenses"
+msgstr ""
+
+#: ../includes/class-widgets.php:798
+msgid "Display event excerpt"
+msgstr ""
+
+#: ../includes/class-widgets.php:800
+msgid "Display event thumbnail"
+msgstr ""
+
+#: ../includes/class-widgets.php:803
+msgid "Thumbnail size"
+msgstr ""
+
+#: ../includes/class-widgets.php:818
+msgid "No events message"
+msgstr ""
+
+#: ../includes/class-widgets.php:822
+msgid "Date format"
+msgstr ""
+
+#: ../includes/class-widgets.php:824
+msgid "Time format"
+msgstr ""
+
+#: ../includes/class-widgets.php:956 ../includes/class-widgets.php:963
+msgid "Events Categories"
+msgstr ""
+
+#: ../includes/class-widgets.php:958
+msgid "Displays a list of events categories"
+msgstr ""
+
+#: ../includes/class-widgets.php:971 ../includes/class-widgets.php:1088
+msgid "ID"
+msgstr ""
+
+#: ../includes/class-widgets.php:972 ../includes/class-widgets.php:1089
+msgid "Name"
+msgstr ""
+
+#: ../includes/class-widgets.php:1009 ../includes/class-widgets.php:1126
+msgid "Show hierarchy"
+msgstr ""
+
+#: ../includes/class-widgets.php:1073 ../includes/class-widgets.php:1080
+msgid "Events Locations"
+msgstr ""
+
+#: ../includes/class-widgets.php:1075
+msgid "Displays a list of events locations"
+msgstr ""
+
+#: ../includes/template-functions.php:495
+#, php-format
+msgid "Event Daily Archives: %s"
+msgstr ""
+
+#: ../includes/template-functions.php:497
+#, php-format
+msgid "Event Monthly Archives: %s"
+msgstr ""
+
+#: ../includes/template-functions.php:497
+msgid "F Y"
+msgstr ""
+
+#: ../includes/template-functions.php:499
+#, php-format
+msgid "Event Yearly Archives: %s"
+msgstr ""
+
+#: ../includes/template-functions.php:499
+msgid "Y"
+msgstr ""
+
+#: ../includes/template-functions.php:501
+#, php-format
+msgid "Events Category: %s"
+msgstr ""
+
+#: ../includes/template-functions.php:503
+#, php-format
+msgid "Events Location: %s"
+msgstr ""
+
+#: ../includes/template-functions.php:505
+#, php-format
+msgid "Events Tag: %s"
+msgstr ""
+
+#: ../templates/archive-event.php:80 ../templates/notusedarchive-event.php:80
+msgid "Apologies, but no events were found."
+msgstr ""
+
+#: ../templates/global/breadcrumb.php:86
+#: ../templates/global/breadcrumb.php:174
+msgid "Search results for &ldquo;"
+msgstr ""
+
+#: ../templates/global/breadcrumb.php:131
+msgid "Error 404"
+msgstr ""
+
+#: ../templates/global/breadcrumb.php:178
+msgid "Posts tagged &ldquo;"
+msgstr ""
+
+#: ../templates/global/breadcrumb.php:183
+msgid "Author:"
+msgstr ""
+
+#: ../templates/global/breadcrumb.php:187
+msgid "Page"
+msgstr ""
+
+#: ../templates/loop-event/meta.php:32 ../templates/single-event/meta.php:32
+msgid "Leave a comment"
+msgstr ""
+
+#: ../templates/loop-event/meta.php:32 ../templates/single-event/meta.php:32
+msgid "1 Comment"
+msgstr ""
+
+#: ../templates/loop-event/meta.php:32 ../templates/single-event/meta.php:32
+msgid "% Comments"
+msgstr ""
+
+#: ../templates/loop-event/meta.php:37 ../templates/single-event/meta.php:37
+msgid "Edit"
+msgstr ""
+
+#: ../templates/loop-event/organizer-details.php:27
+msgid "Contact name"
+msgstr ""
+
+#: ../templates/loop-event/organizer-details.php:31
+msgid "Phone"
+msgstr ""
+
+#: ../templates/loop-event/organizer-details.php:35
+msgid "Email"
+msgstr ""
+
+#: ../templates/loop-event/organizer-details.php:39
+msgid "Website"
+msgstr ""
+
+#: ../templates/loop-event/pagination.php:37
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../templates/loop-event/pagination.php:38
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:27
+msgid "Sort by start date: ascending"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:28
+msgid "Sort by start date: descending"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:29
+msgid "Sort by end date: ascending"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:30
+msgid "Sort by end date: descending"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:31
+msgid "Sort by title: ascending"
+msgstr ""
+
+#: ../templates/loop-event/sorting.php:32
+msgid "Sort by title: descending"
+msgstr ""
