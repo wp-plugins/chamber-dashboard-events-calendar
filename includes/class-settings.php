@@ -121,8 +121,8 @@ class Cdash_Events_Settings
 	*/
 	public function settings_page()
 	{
-		if ( is_plugin_active( 'chamber-dashboard-business-directory/cdash-business-directory.php' ) ) {
-			// Chamber Dashboard Business Directory plugin is active, so we just need to add a submenu page
+		if ( is_plugin_active( 'chamber-dashboard-business-directory/cdash-business-directory.php' ) || is_plugin_active( 'chamber-dashboard-crm/cdash-crm.php' ) ) {
+			// Another Chamber Dashboard plugin is active, so we just need to add a submenu page
 			add_submenu_page( '/chamber-dashboard-business-directory/options.php', __('Calendar Options', 'cdash-events'), __('Calendar Options', 'cdash-events'), 'manage_options', 'cdash-events', array($this, 'options_page') );
 		} else {
 			// Chamber Dashboard Business Directory plugin is not active, so we need to add the whole menu
