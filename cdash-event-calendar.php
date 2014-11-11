@@ -2,7 +2,7 @@
 /*
 Plugin Name: Chamber Dashboard Event Calendar
 Description: Create a calendar of events and display it on your site.  A fork of the Events Maker plugin, modified to work with the Chamber Dashboard suite of plugins.
-Version: 1.0.3
+Version: 1.0.4
 Author: Morgan Kay
 Author URI: http://wpalchemists.com/
 Plugin URI: http://chamberdashboard.com/

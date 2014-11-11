@@ -81,7 +81,10 @@ No questions yet.
 4. screenshot-4.png
 
 == Changelog ==
-- 1.0.2 =
+= 1.0.4 =
+* Fixed category colors not saving
+
+= 1.0.2 =
 * Fixed capabilities bug
 
 = 1.0.1 =

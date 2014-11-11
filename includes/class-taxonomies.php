@@ -324,9 +324,6 @@ class Cdash_Events_Taxonomies
 		$taxonomy = (isset($_POST['taxonomy'])) ? esc_attr($_POST['taxonomy']) : esc_attr($_GET['taxonomy']);
 		$term = get_term($term_id, $taxonomy);
 		
-		if (!current_user_can('manage_event_categories'))
-        	return;
-		
 		if(isset($_POST['term_meta']) && is_array($_POST['term_meta']))
 		{
 			$term_meta = get_option('event_category_'.$term->term_taxonomy_id);
@@ -354,9 +351,6 @@ class Cdash_Events_Taxonomies
 	{
 		$taxonomy = (isset($_POST['taxonomy'])) ? esc_attr($_POST['taxonomy']) : esc_attr($_GET['taxonomy']);
 		$term = get_term($term_id, $taxonomy);
-		
-		if (!current_user_can('manage_event_locations'))
-        	return;
 		
 		if(isset($_POST['term_meta']) && is_array($_POST['term_meta']))
 		{
