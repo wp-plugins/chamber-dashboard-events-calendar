@@ -3,7 +3,7 @@ Contributors: gwendydd
 Donate link: http://chamberdashboard.com/donate
 Tags: event, events management, event management, events manager, event manager, event organizer, events calendar, widget, attendance, attendee, calendar, event registration, ticket, tickets, ticketing, bookings, Chamber of Commerce
 Requires at least: 3.7
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
