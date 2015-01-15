@@ -125,7 +125,7 @@ class Cdash_Events_Templates
 			if(!empty($locations) || !is_wp_error($locations)) {
 				$event_display_options = get_post_meta($post_id, '_event_display_options', TRUE); // event display options
 				if (!empty($event_display_options) && $event_display_options['display_location_details'] === 1) {
-					$event_content .= __('<strong>Location: </strong>', 'cdash-events');
+					$event_content .= __('<div class="location"><strong>Location: </strong>', 'cdash-events');
 			        	
 		        	foreach ($locations as $term) :
 						
@@ -149,11 +149,13 @@ class Cdash_Events_Templates
 							$event_content .= ' ';
 						endif;
 						
-						$event_content .= '</span>';
+						$event_content .= '</span></div>';
 						
 		            endforeach;
 				} else {
+					$event_content .= '<div class="location">';
 					$event_content .= get_the_term_list($post_id, 'event-location', __('<strong>Location: </strong>', 'cdash-events'), ', ', '');
+					$event_content .= '</div>';
 				}
 			}
 

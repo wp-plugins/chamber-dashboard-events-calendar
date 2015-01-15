@@ -2,7 +2,7 @@
 /*
 Plugin Name: Chamber Dashboard Event Calendar
 Description: Create a calendar of events and display it on your site.  A fork of the Events Maker plugin, modified to work with the Chamber Dashboard suite of plugins.
-Version: 1.0.4
+Version: 1.2
 Author: Morgan Kay
 Author URI: http://wpalchemists.com/
 Plugin URI: http://chamberdashboard.com/
@@ -107,6 +107,7 @@ class Cdash_Events
 		$this->transient_id = (isset($_COOKIE['cde_transient_id']) ? $_COOKIE['cde_transient_id'] : 'emtr_'.sha1($this->generate_hash()));
 
 		// actions
+		add_action('admin_init', array(&$this, 'require_business_directory'));
 		add_action('init', array(&$this, 'register_taxonomies'));
 		add_action('init', array(&$this, 'register_post_types'));
 		add_action('plugins_loaded', array(&$this, 'init_session'), 1);
@@ -123,6 +124,23 @@ class Cdash_Events
 		add_filter('map_meta_cap', array(&$this, 'event_map_meta_cap'), 10, 4);
 		add_filter('post_updated_messages', array(&$this, 'register_post_types_messages'));
 		add_filter('plugin_row_meta', array(&$this, 'plugin_extend_links'), 10, 2);
+	}
+
+
+	public function require_business_directory() {
+	    if ( is_admin() && current_user_can( 'activate_plugins' ) &&  !function_exists( 'cdash_requires_wordpress_version' )  ) {
+	        add_action('admin_notices', array(&$this, 'business_directory_notice'));
+
+	        deactivate_plugins( plugin_basename( __FILE__ ) ); 
+
+	        if ( isset( $_GET['activate'] ) ) {
+	            unset( $_GET['activate'] );
+	        }
+	    }
+	}
+
+	public function business_directory_notice(){
+	    ?><div class="error"><p><?php _e('Sorry, but the Chamber Dashboard Event Calendar requires the <a href="https://wordpress.org/plugins/chamber-dashboard-business-directory/" target="_blank">Chamber Dashboard Business Directory</a> to be installed and active.', 'cdash-events' ); ?></p></div><?php
 	}
 
 
@@ -224,109 +242,6 @@ class Cdash_Events
 	*/
 	public function pass_variables()
 	{
-		$this->currencies = array(
-			'codes' => array(
-				'AUD' => __('Australian Dollar', 'cdash-events'),
-				'BDT' => __('Bangladeshi Taka', 'cdash-events'),
-				'BRL' => __('Brazilian Real', 'cdash-events'),
-				'BGN' => __('Bulgarian Lev', 'cdash-events'),
-				'CAD' => __('Canadian Dollar', 'cdash-events'),
-				'CLP' => __('Chilean Peso', 'cdash-events'),
-				'CNY' => __('Chinese Yuan', 'cdash-events'),
-				'COP' => __('Colombian Peso', 'cdash-events'),
-				'HRK' => __('Croatian kuna', 'cdash-events'),
-				'CZK' => __('Czech Koruna', 'cdash-events'),
-				'DKK' => __('Danish Krone', 'cdash-events'),
-				'EUR' => __('Euro', 'cdash-events'),
-				'HKD' => __('Hong Kong Dollar', 'cdash-events'),
-				'HUF' => __('Hungarian Forint', 'cdash-events'),
-				'ISK' => __('Icelandic krona', 'cdash-events'),
-				'INR' => __('Indian Rupee', 'cdash-events'),
-				'IDR' => __('Indonesian Rupiah', 'cdash-events'),
-				'ILS' => __('Israeli Shekel', 'cdash-events'),
-				'IRR' => __('Iranian Rial', 'cdash-events'),
-				'JPY' => __('Japanese Yen', 'cdash-events'),
-				'MYR' => __('Malaysian Ringgit', 'cdash-events'),
-				'MXN' => __('Mexican Peso', 'cdash-events'),
-				'NZD' => __('New Zealand Dollar', 'cdash-events'),
-				'NGN' => __('Nigerian Naira', 'cdash-events'),
-				'NOK' => __('Norwegian Krone', 'cdash-events'),
-				'PHP' => __('Philippine Peso', 'cdash-events'),
-				'PLN' => __('Polish Zloty', 'cdash-events'),
-				'GBP' => __('Pound Sterling', 'cdash-events'),
-				'RON' => __('Romanian Leu', 'cdash-events'),
-				'RUB' => __('Russian Ruble', 'cdash-events'),
-				'SGD' => __('Singapore Dollar', 'cdash-events'),
-				'ZAR' => __('South African Rand', 'cdash-events'),
-				'KRW' => __('South Korean Won', 'cdash-events'),
-				'SEK' => __('Swedish Krona', 'cdash-events'),
-				'CHF' => __('Swiss Franc', 'cdash-events'),
-				'TWD' => __('Taiwan New Dollar', 'cdash-events'),
-				'THB' => __('Thai Baht', 'cdash-events'),
-				'TRY' => __('Turkish Lira', 'cdash-events'),
-				'UAH' => __('Ukrainian Hryvnia', 'cdash-events'),
-				'AED' => __('United Arab Emirates Dirham', 'cdash-events'),
-				'USD' => __('United States Dollar', 'cdash-events'),
-				'VND' => __('Vietnamese Dong', 'cdash-events')
-			),
-			'symbols' => array(
-				'AUD' => '&#36;',
-				'BDT' => '&#2547;',
-				'BRL' => 'R&#36;',
-				'BGN' => '&#1083;&#1074;',
-				'CAD' => '&#36;',
-				'CLP' => '&#36;',
-				'CNY' => '&#165;',
-				'COP' => '&#36;',
-				'HRK' => 'kn',
-				'CZK' => 'K&#269;',
-				'DKK' => 'kr',
-				'EUR' => '&#8364;',
-				'HKD' => 'HK&#36;',
-				'HUF' => 'Ft',
-				'ISK' => 'kr',
-				'INR' => '&#8377;',
-				'IDR' => 'Rp',
-				'ILS' => '&#8362;',
-				'IRR' => '&#65020;',
-				'JPY' => '&#165;',
-				'MYR' => 'RM',
-				'MXN' => '&#36;',
-				'NZD' => '&#36;',
-				'NGN' => '&#8358;',
-				'NOK' => 'kr',
-				'PHP' => 'Php',
-				'PLN' => 'z&#322;',
-				'GBP' => '&#163;',
-				'RON' => 'lei',
-				'RUB' => '&#1088;&#1091;&#1073;',
-				'SGD' => '&#36;',
-				'ZAR' => 'R',
-				'KRW' => '&#8361;',
-				'SEK' => 'kr',
-				'CHF' => 'SFr.',
-				'TWD' => 'NT&#36;',
-				'THB' => '&#3647;',
-				'TRY' => '&#8378;',
-				'UAH' => '&#8372;',
-				'AED' => 'د.إ',
-				'USD' => '&#36;',
-				'VND' => '&#8363;'
-			),
-			'positions' => array(
-				'before' => __('before the price', 'cdash-events'),
-				'after' => __('after the price', 'cdash-events')
-			),
-			'formats' => array(
-				1 => '1,234.56',
-				2 => '1,234',
-				3 => '1234',
-				4 => '1234.56',
-				5 => '1 234,56',
-				6 => '1 234.56'
-			)
-		);
-
 		$this->recurrences = apply_filters(
 			'cde_event_recurrences_options',
 			array(
@@ -374,15 +289,6 @@ class Cdash_Events
 	public function get_options()
 	{
 		return $this->options;
-	}
-
-
-	/**
-	 * Get currencies options
-	*/
-	public function get_currencies()
-	{
-		return $this->currencies;
 	}
 
 
@@ -889,7 +795,7 @@ class Cdash_Events
 		{
 			return array_merge(
 				$links,
-				array(sprintf('<a href="http://www.dfactory.eu/support/forum/cdash-events/" target="_blank">%s</a>', __('Support', 'cdash-events')))
+				array(sprintf('<a href="https://chamberdashboard.com/forums/forum/chamber-dashboard-events-calendar/" target="_blank">%s</a>', __('Support', 'cdash-events')))
 			);
 		}
 

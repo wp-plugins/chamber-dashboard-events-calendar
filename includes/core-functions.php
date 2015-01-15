@@ -483,39 +483,13 @@ function cde_get_tickets($post_id = 0)
  */
 function cde_get_currency_symbol($price = '')
 {
-	$options = get_option('cdash_events_general');
+	$options = get_option('cdash_directory_options');
 
-	$symbol = ($options['currencies']['symbol'] === '' ? strtoupper($options['currencies']['code']) : $options['currencies']['symbol']);
+	$symbol = ($options['currency_symbol'] === '' ? strtoupper($options['currency']) : $options['currency_symbol']);
 
 	if(is_numeric($price))
 	{
-		switch($options['currencies']['format'])
-		{
-			case 1:
-				$price = number_format($price, 2, '.', ',');
-				break;
-
-			case 2:
-				$price = number_format($price, 0, '', ',');
-				break;
-
-			case 3:
-				$price = number_format($price, 0, '', '');
-				break;
-
-			case 4:
-				$price = number_format($price, 2, '.', '');
-				break;
-
-			case 5:
-				$price = number_format($price, 2, ',', ' ');
-				break;
-
-			case 6:
-				$price = number_format($price, 2, '.', ' ');
-				break;
-		}
-
+		$price = number_format($price, 2, '.', ',');
 		return apply_filters('cde_get_currency_symbol', ($options['currencies']['position'] === 'after' ? $price.' '.$symbol : $symbol.' '.$price), $price);
 	}
 	else

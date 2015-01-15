@@ -3,7 +3,7 @@ Contributors: gwendydd
 Donate link: http://chamberdashboard.com/donate
 Tags: event, events management, event management, events manager, event manager, event organizer, events calendar, widget, attendance, attendee, calendar, event registration, ticket, tickets, ticketing, bookings, Chamber of Commerce
 Requires at least: 3.7
-Tested up to: 4.1
+Tested up to: 4.0
 Stable tag: trunk
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
@@ -14,11 +14,11 @@ Create a calendar of events and display it on your site.  A fork of the Events M
 
 Create a calendar of events to display on your site.  Chamber Dashboard Events Calendar is a part of the Chamber Dashboard collection of plugins and themes designed to meet the needs of chambers of commerce.
 
-<<<<<<< HEAD
-For more information, check out plugin page at [Chamber Dashboard](http://chamberdashboard.com/features/chamber-dashboard-events-calendar/).
-=======
+This plugin requires that you have the [Chamber Dashboard Business Directory](https://wordpress.org/plugins/chamber-dashboard-business-directory/) installed.
+
+
+
 For more information, check out plugin page at [Chamber Dashboard](http://chamberdashboard.com/) site.
->>>>>>> fixdates
 
 = Chamber Dashboard Events Calendar features: =
 
@@ -81,6 +81,10 @@ No questions yet.
 4. screenshot-4.png
 
 == Changelog ==
+= 1.2 =
+* Events Calendar now requires Chamber Dashboard Business Directory
+* moved currency settings to Business Directory settings page
+
 = 1.0.4 =
 * Fixed category colors not saving
 

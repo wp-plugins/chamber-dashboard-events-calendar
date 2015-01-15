@@ -13,7 +13,6 @@ class Cdash_Events_Settings
 	private $calendar_displays = array();
 	private $calendar_contents = array();
 	private $tabs = array();
-	private $currencies = array();
 	private $cdash_events;
 	private $transient_id = '';
 
@@ -29,22 +28,11 @@ class Cdash_Events_Settings
 		//actions
 		add_action('admin_menu', array(&$this, 'settings_page'));
 		add_action('admin_init', array(&$this, 'register_settings'));
-		add_action('after_setup_theme', array(&$this, 'set_currencies'));
 		add_action('after_setup_theme', array(&$this, 'load_defaults'));
 
 		//filters
 		add_filter('plugin_action_links', array(&$this, 'plugin_settings_link'), 10, 2);
 	}
-
-
-	/**
-	 * 
-	*/
-	public function set_currencies()
-	{
-		$this->currencies = $this->events_maker->get_currencies();
-	}
-
 
 	/**
 	 * 
@@ -189,13 +177,6 @@ class Cdash_Events_Settings
 		add_settings_field('cde_thumbnail_display_options', __('Featured image display options', 'cdash-events'), array(&$this, 'cde_thumbnail_display_options'), 'cdash_events_general', 'cdash_events_general');
 		add_settings_field('cde_events_in_rss', __('RSS feed', 'cdash-events'), array(&$this, 'cde_events_in_rss'), 'cdash_events_general', 'cdash_events_general');
 
-		// currencies
-		add_settings_section('cdash_events_currencies', __('Currency settings', 'cdash-events'), '', 'cdash_events_general');
-		add_settings_field('cde_tickets_currency_code', __('Currency', 'cdash-events'), array(&$this, 'cde_tickets_currency_code'), 'cdash_events_general', 'cdash_events_currencies');
-		add_settings_field('cde_tickets_currency_position', __('Currency position', 'cdash-events'), array(&$this, 'cde_tickets_currency_position'), 'cdash_events_general', 'cdash_events_currencies');
-		add_settings_field('cde_tickets_currency_symbol', __('Currency symbol', 'cdash-events'), array(&$this, 'cde_tickets_currency_symbol'), 'cdash_events_general', 'cdash_events_currencies');
-		add_settings_field('cde_tickets_currency_format', __('Currency display format', 'cdash-events'), array(&$this, 'cde_tickets_currency_format'), 'cdash_events_general', 'cdash_events_currencies');
-
 		// other
 		add_settings_section('cdash_events_other', __('Date settings', 'cdash-events'), '', 'cdash_events_general');
 		add_settings_field('cde_date_format', __('Date and time format', 'cdash-events'), array(&$this, 'cde_date_format'), 'cdash_events_general', 'cdash_events_other');
@@ -282,94 +263,6 @@ class Cdash_Events_Settings
 		</div>';
 	}
 
-	/**
-	 * 
-	*/
-	public function cde_tickets_currency_code()
-	{
-		echo '
-		<div id="cde_tickets_currency_code">
-			<fieldset>
-				<select id="em-tickets-currency-code" name="cdash_events_general[currencies][code]">';
-
-		foreach($this->currencies['codes'] as $code => $currency)
-		{
-			echo '
-					<option value="'.esc_attr($code).'" '.selected($code, strtoupper($this->options['general']['currencies']['code']), false).'>'.esc_html($currency).' ('.$this->currencies['symbols'][$code].')</option>';
-		}
-
-		echo '
-				</select>
-				<br />
-				<span class="description">'.__('Choose the currency that will be used for ticket prices.', 'cdash-events').'</span>
-			</fieldset>
-		</div>';
-	}
-
-
-	/**
-	 * 
-	*/
-	public function cde_tickets_currency_position()
-	{
-		echo '
-		<div id="cde_tickets_currency_position">
-			<fieldset>';
-
-		foreach($this->currencies['positions'] as $key => $position)
-		{
-			echo '
-				<input id="em-ticket-currency-position-'.$key.'" type="radio" name="cdash_events_general[currencies][position]" value="'.esc_attr($key).'" '.checked($key, $this->options['general']['currencies']['position'], false).' /><label for="em-ticket-currency-position-'.$key.'">'.$position.'</label>';
-		}
-
-		echo '
-				<br />
-				<span class="description">'.__('Choose the location of the currency sign.', 'cdash-events').'</span>
-			</fieldset>
-		</div>';
-	}
-
-
-	/**
-	 * 
-	*/
-	public function cde_tickets_currency_symbol()
-	{
-		echo '
-		<div id="cde_tickets_currency_symbol">
-			<fieldset>
-				<input type="text" size="4" name="cdash_events_general[currencies][symbol]" value="'.esc_attr($this->options['general']['currencies']['symbol']).'" />
-				<br />
-				<span class="description">'.__('This will appear next to all the currency figures on the website. Ex. $, USD, &euro;...', 'cdash-events').'</span>
-			</fieldset>
-		</div>';
-	}
-
-
-	/**
-	 * 
-	*/
-	public function cde_tickets_currency_format()
-	{
-		echo '
-		<div id="cde_tickets_currency_format">
-			<fieldset>
-				<select id="em-tickets-currency-format" name="cdash_events_general[currencies][format]">';
-
-		foreach($this->currencies['formats'] as $code => $format)
-		{
-			echo '
-					<option value="'.esc_attr($code).'" '.selected($code, $this->options['general']['currencies']['format'], false).'>'.$format.'</option>';
-		}
-
-		echo '
-				</select>
-				<br />
-				<span class="description">'.__('This determines how your currency is displayed. Ex. 1,234.56 or 1,200 or 1200.', 'cdash-events').'</span>
-			</fieldset>
-		</div>';
-	}
-
 
 	/**
 	 * 
@@ -418,12 +311,6 @@ class Cdash_Events_Settings
 	{
 		if(isset($_POST['save_cde_general']))
 		{
-			// currencies
-			$input['currencies']['symbol'] = sanitize_text_field($input['currencies']['symbol']);
-			$input['currencies']['code'] = (isset($input['currencies']['code']) && in_array($input['currencies']['code'], array_keys($this->currencies['codes'])) ? strtoupper($input['currencies']['code']) : $this->defaults['currencies']['code']);
-			$input['currencies']['format'] = (isset($input['currencies']['format']) && in_array($input['currencies']['format'], array_keys($this->currencies['formats'])) ? $input['currencies']['format'] : $this->defaults['currencies']['format']);
-			$input['currencies']['position'] = (isset($input['currencies']['position']) && in_array($input['currencies']['position'], array_keys($this->currencies['positions'])) ? $input['currencies']['position'] : $this->defaults['currencies']['position']);
-
 			// date, time, weekday
 			$input['datetime_format']['date'] = sanitize_text_field($input['datetime_format']['date']);
 			$input['datetime_format']['time'] = sanitize_text_field($input['datetime_format']['time']);
