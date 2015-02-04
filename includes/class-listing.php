@@ -140,8 +140,9 @@ class Cdash_Events_Listing
 
 			case 'event_recurrence':
 				$recurrence = get_post_meta($id, '_event_recurrence', true);
-
-				echo $this->recurrences[$recurrence['type']];
+				if( isset( $recurrence) && '' !== $recurrence )  {
+					echo $this->recurrences[$recurrence['type']];
+				}
 				break;
 
 			case 'event_free':

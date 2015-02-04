@@ -81,6 +81,10 @@ No questions yet.
 4. screenshot-4.png
 
 == Changelog ==
+= 1.3 = 
+* Added category parameter to events_calendar shortcode
+* Fixed bug where recurring events were duplicated on first day
+
 = 1.2 =
 * Events Calendar now requires Chamber Dashboard Business Directory
 * moved currency settings to Business Directory settings page

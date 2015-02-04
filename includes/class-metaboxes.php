@@ -675,10 +675,10 @@ class Cdash_Events_Metaboxes
 			delete_post_meta($post_ID, '_event_occurrence_last_date');
 	
 			// adds first occurrence even for one time events
-			update_post_meta($post_ID, '_event_occurrence_date', $event_start_date.'|'.$event_end_date);
+			//update_post_meta($post_ID, '_event_occurrence_date', $event_start_date.'|'.$event_end_date);
 	
 			$recurrence = $_POST['event_recurrence'];
-	
+
 			if(isset($this->recurrences[$recurrence['type']]))
 			{
 				$recurrence['until'] = date('Y-m-d', strtotime($recurrence['until']));
@@ -696,6 +696,7 @@ class Cdash_Events_Metaboxes
 					);
 	
 					// adds last occurrence (same as first)
+					update_post_meta($post_ID, '_event_occurrence_date', $event_start_date.'|'.$event_end_date);
 					update_post_meta($post_ID, '_event_occurrence_last_date', $event_start_date.'|'.$event_end_date);
 				}
 				elseif($recurrence['type'] === 'custom')

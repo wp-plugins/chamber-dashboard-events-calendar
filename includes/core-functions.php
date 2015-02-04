@@ -25,6 +25,8 @@ function cde_get_events($args = array())
 		'posts_per_page' => -1
 	);
 	$args = wp_parse_args($args, $defaults);
+	// $stop = "<pre>" . print_r($args, true) . "</pre>";
+	// wp_die($stop);
 	
 	return apply_filters('cde_get_events', get_posts($args));
 }
@@ -490,7 +492,7 @@ function cde_get_currency_symbol($price = '')
 	if(is_numeric($price))
 	{
 		$price = number_format($price, 2, '.', ',');
-		return apply_filters('cde_get_currency_symbol', ($options['currencies']['position'] === 'after' ? $price.' '.$symbol : $symbol.' '.$price), $price);
+		return apply_filters('cde_get_currency_symbol', ($options['currency_position'] === 'after' ? $price.' '.$symbol : $symbol.' '.$price), $price);
 	}
 	else
 		return apply_filters('cde_get_currency_symbol', $symbol, $price);

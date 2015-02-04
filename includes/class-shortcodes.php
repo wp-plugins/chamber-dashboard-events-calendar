@@ -49,7 +49,8 @@ class Cdash_Events_Shortcodes
 			'show_past_events' => true,
 			'show_occurrences' => true,
 			'post_type' => 'event',
-			'author' => ''
+			'author' => '',
+			'category' => '',
 		);
 
 		// parse arguments
@@ -61,6 +62,7 @@ class Cdash_Events_Shortcodes
 		$args['end_after'] = (string)$args['end_after'];
 		$args['end_before'] = (string)$args['end_before'];
 		$args['ondate'] = (string)$args['ondate'];
+		$args['category'] = (string)$args['category'];
 
 		// valid date range?
 		if(!in_array($args['date_range'], array('between', 'outside'), true))
@@ -108,6 +110,15 @@ class Cdash_Events_Shortcodes
 		$args['event_ticket_type'] = $args['ticket_type'];
 		$args['event_show_past_events'] = $args['show_past_events'];
 		$args['event_show_occurrences'] = $args['show_occurrences'];
+		if( '' !== $args['category'] ) {
+			$args['tax_query'] = array(
+				array(
+					'taxonomy' => 'event-category',
+					'field'    => 'slug',
+					'terms'    => $args['category'],
+				),
+			);
+		}
 
 		// unsets old arguments
 		unset($args['start_after']);
@@ -120,6 +131,7 @@ class Cdash_Events_Shortcodes
 		unset($args['ticket_type']);
 		unset($args['show_past_events']);
 		unset($args['show_occurrences']);
+		unset($args['category']);
 
 		wp_register_script(
 			'cdash-events-moment',
